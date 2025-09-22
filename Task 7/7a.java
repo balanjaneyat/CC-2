@@ -31,8 +31,6 @@ public class LongestUnivaluePath {
         maxLength = Math.max(maxLength, leftPath + rightPath);
         return Math.max(leftPath, rightPath);
     }
-
-    // Test
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(4);

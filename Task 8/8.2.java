@@ -12,7 +12,6 @@ public class MinCostConnectGroups {
             }
             minRight[j] = min;
         }
-
         // Step 2: Initialize DP table
         int[][] dp = new int[m + 1][1 << n];
         for (int i = 0; i <= m; i++) {

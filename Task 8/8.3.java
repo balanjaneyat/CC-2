@@ -6,7 +6,7 @@ public class DecodeString {
         Stack<String> result = new Stack<>();
         String res = "";
         int idx = 0;
-
+        
         while (idx < s.length()) {
             if (Character.isDigit(s.charAt(idx))) {
                 int count = 0;

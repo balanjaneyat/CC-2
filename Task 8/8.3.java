@@ -30,7 +30,6 @@ public class DecodeString {
                 res += s.charAt(idx++);
             }
         }
-
         return res;
     }
 

@@ -21,7 +21,7 @@ public class MinCostConnectGroups {
             }
         }
         dp[0][0] = 0;
-
+        
         // Step 3: DP state transitions
         for (int i = 1; i <= m; i++) {
             for (int mask = 0; mask < (1 << n); mask++) {

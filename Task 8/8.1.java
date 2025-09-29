@@ -35,7 +35,6 @@ public class CheapestFlight {
                 }
             }
         }
-
         return -1; // <-- This must be outside the while loop
     }
 

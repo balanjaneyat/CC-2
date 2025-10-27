@@ -1,0 +1,15 @@
+importjava.util.*; class ATM {
+public static void main(String[] a) {Scannersc = new Scanner(System.in);int[]d={2000,500,200,100,50,20,10};
+int[] c = {5, 5, 5, 5, 5, 5, 5};
+System.out.print("Enterwithdrawalamount:"); int amt = sc.nextInt(), total = 0;
+for(inti=0;i<d.length;i++){ int need = amt / d[i];
+intuse=Math.min(need,c[i]); if (use > 0) {
+System.out.println(d[i]+"x"+use); total += use;
+}
+amt -= use * d[i];
+}
+if (amt == 0)
+System.out.println("TotalNotes:"+total); else
+System.out.println("Insufficient notes to complete this amount!");
+}
+}
